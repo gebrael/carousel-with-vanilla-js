@@ -1,0 +1,51 @@
+img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+}
+#img {
+  width: 45%;
+  height: 45%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+.x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.right,
+.left {
+  cursor: pointer;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  #img {
+    width: 98%;
+    background-size: contain;
+  }
+  .x {
+    opacity: 0;
+  }
+  #layer {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
